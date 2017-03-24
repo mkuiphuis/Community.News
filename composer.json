@@ -4,8 +4,8 @@
     "version": "dev-master",
     "description": "Base News package built on top of Flowpack.Listable",
     "require": {
-        "typo3/neos": "~2.0",
-        "flowpack/listable": "~3.0"
+        "typo3/neos": "~3.0",
+        "flowpack/listable": "dev-master"
     },
     "autoload": {
         "psr-0": {
