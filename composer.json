@@ -2,9 +2,10 @@
     "name": "community/news",
     "type": "typo3-flow-plugin",
     "version": "dev-master",
-    "description": "Base News package for demonstration purposes and to be extended as needed",
+    "description": "Base News package built on top of Flowpack.Listable",
     "require": {
-        "typo3/neos": "2.0.*@beta"
+        "typo3/neos": "~2.0",
+        "flowpack/listable", "~2.0"
     },
     "autoload": {
         "psr-0": {
