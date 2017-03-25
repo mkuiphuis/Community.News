@@ -1,4 +1,4 @@
-prototype(Community.News:CategoryShort) < prototype(TYPO3.Neos:Content) {
+prototype(Community.News:CategoryShort) < prototype(Neos.Neos:Content) {
     templatePath = 'resource://Community.News/Private/Templates/NodeTypes/CategoryShort.html'
     sectionName = 'categoryShort'
 

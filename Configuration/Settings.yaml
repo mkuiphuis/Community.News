@@ -1,10 +1,11 @@
-TYPO3:
+
+Neos:
   Neos:
-    typoScript:
-      autoInclude:
-        'Community.News': TRUE
     nodeTypes:
       groups:
         news:
           position: 280
           label: 'Community News'
+    fusion:
+      autoInclude:
+        Community.News: true
