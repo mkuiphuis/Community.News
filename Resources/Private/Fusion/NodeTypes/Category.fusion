@@ -11,9 +11,9 @@ prototype(Community.News:Category) {
     # Fetch and render all news articles that belong to the current category
     newsByCategory = Community.News:AbstractList {
         @context.listTitle = 'News with this category'
-        prototype(Flowpack.Listable:Listable) {
+        prototype(Flowpack.Listable:PaginatedCollection) {
             @context.paginationEnabled = false
-            collection = ${q(site).find('[instanceof Community.News:AbstractNews]').filterByReference('categories', node).get()}
+            collection = ${q(site).find('[instanceof Community.News:News]').filterByReference('categories', node).get()}
         }
     }
 }

@@ -1,15 +1,14 @@
 {
     "name": "community/news",
     "type": "neos-plugin",
-    "version": "dev-master",
     "description": "Base News package built on top of Flowpack.Listable",
     "require": {
-        "typo3/neos": "~3.0",
+        "neos/neos": "~3.0",
         "flowpack/listable": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Community\\News": "Classes"
+        "psr-4": {
+            "Community\\News\\": "Classes"
         }
     },
     "extra": {

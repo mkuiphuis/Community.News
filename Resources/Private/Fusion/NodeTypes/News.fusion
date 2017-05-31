@@ -15,13 +15,13 @@ prototype(Community.News:News) {
     }
 
     # Fetch and render all related news
-    relatedNews = Community.News:AbstractList {
-        @context.listTitle = 'Related news'
-        prototype(Flowpack.Listable:Listable) {
-            @context.paginationEnabled = false
-            collection = ${q(node).property('related')}
-        }
-    }
+//    relatedNews = Community.News:AbstractList {
+//        @context.listTitle = 'Related news'
+//        prototype(Flowpack.Listable:Listable) {
+//            @context.paginationEnabled = false
+//            collection = ${q(node).property('related')}
+//        }
+//    }
 }
 
 # Attach to `PrimaryContent` to render nodes of this time automatically
