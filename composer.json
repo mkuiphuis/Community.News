@@ -3,7 +3,7 @@
     "type": "neos-plugin",
     "description": "Base News package built on top of Flowpack.Listable",
     "require": {
-        "neos/neos": "~3.0",
+        "neos/neos": "*",
         "flowpack/listable": "dev-master"
     },
     "autoload": {
