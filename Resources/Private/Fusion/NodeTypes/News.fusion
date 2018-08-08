@@ -4,6 +4,8 @@ prototype(Community.News:News) {
     # set the template section to use
     sectionName = 'newsDetail'
 
+    teaser = ${q(node).property('teaser')}
+
     main = Neos.Neos:ContentCollection{
         nodePath = 'main'
     }
