@@ -51,25 +51,22 @@
         inlineEditable: true
         inspector:
           group: null
-        aloha:
-          placeholder: 'Enter title here'
-          format:
-            b: false
-            i: false
-            u: false
-            sub: false
-            sup: false
-            p: false
-            h1: false
-            h2: false
-            h3: false
-            pre: false
-            removeFormat: false
-          table: {  }
-          list: {  }
-          link:
-            a: true
-          alignment: {  }
+        inline:
+          editorOptions:
+            formatting:
+              u: false
+              sub: false
+              sup: false
+              p: false
+              h1: false
+              h2: false
+              h3: false
+              pre: false
+              removeFormat: false
+              a: true
+              strong: true
+              em: true
+            placeholder: 'Enter title here'
     important:
       type: boolean
       ui:
@@ -83,25 +80,22 @@
         inlineEditable: true
         inspector:
           group: null
-        aloha:
-          placeholder: 'Enter teaser here'
-          format:
-            b: true
-            i: true
-            u: false
-            sub: false
-            sup: false
-            p: true
-            h1: false
-            h2: false
-            h3: false
-            pre: false
-            removeFormat: false
-          table: {  }
-          list: {  }
-          link:
-            a: true
-          alignment: {  }
+        inline:
+          editorOptions:
+            formatting:
+              u: false
+              sub: false
+              sup: false
+              p: true
+              h1: false
+              h2: false
+              h3: false
+              pre: false
+              removeFormat: false
+              a: true
+              strong: true
+              em: true
+            placeholder: 'Enter teaser here'
     categories:
       type: references
       ui:
@@ -187,27 +181,24 @@
       ui:
         label: 'Author email'
         inlineEditable: true
-        aloha:
-          placeholder: 'Author email'
-          format:
-            b: false
-            i: false
-            u: false
-            sub: false
-            sup: false
-            p: false
-            h1: false
-            h2: false
-            h3: false
-            pre: false
-            removeFormat: false
-          table: {  }
-          list: {  }
-          link:
-            a: true
-          alignment: {  }
         inspector:
           group: general
+        inline:
+          editorOptions:
+            formatting:
+              u: false
+              sub: false
+              sup: false
+              p: false
+              h1: false
+              h2: false
+              h3: false
+              pre: false
+              removeFormat: false
+              a: true
+              strong: true
+              em: true
+            placeholder: 'Author email'
 'Community.News:NewsList':
   superTypes:
     'Neos.Neos:Content': true
