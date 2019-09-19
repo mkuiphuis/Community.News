@@ -130,9 +130,11 @@
         reloadIfChanged: false
         inspector:
           group: related
+
 'Community.News:News':
   superTypes:
     'Community.News:AbstractNews': true
+
 'Community.News:Category':
   superTypes:
     'Neos.Neos:Document': true
@@ -147,8 +149,9 @@
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
+
 'Community.News:Author':
-  label: '${String.stripTags(q(node).property(''name''))}'
+  label: '${String.stripTags(q(node).property(''title''))}'
   superTypes:
     'Neos.Neos:Document': true
     'Neos.NodeTypes:ImageMixin': true
@@ -199,6 +202,7 @@
               strong: true
               em: true
             placeholder: 'Author email'
+
 'Community.News:NewsList':
   superTypes:
     'Neos.Neos:Content': true
@@ -210,6 +214,7 @@
   constraints:
     nodeTypes:
       '*': false
+
 'Community.News:NewsLatest':
   superTypes:
     'Neos.Neos:Content': true
