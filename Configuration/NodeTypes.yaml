@@ -54,7 +54,6 @@
         inline:
           editorOptions:
             formatting:
-              u: false
               sub: false
               sup: false
               p: false
@@ -66,6 +65,7 @@
               a: true
               strong: true
               em: true
+              underline: false
             placeholder: 'Enter title here'
     important:
       type: boolean
@@ -83,7 +83,6 @@
         inline:
           editorOptions:
             formatting:
-              u: false
               sub: false
               sup: false
               p: true
@@ -95,6 +94,7 @@
               a: true
               strong: true
               em: true
+              underline: false
             placeholder: 'Enter teaser here'
     categories:
       type: references
@@ -130,11 +130,9 @@
         reloadIfChanged: false
         inspector:
           group: related
-
 'Community.News:News':
   superTypes:
     'Community.News:AbstractNews': true
-
 'Community.News:Category':
   superTypes:
     'Neos.Neos:Document': true
@@ -149,7 +147,6 @@
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
-
 'Community.News:Author':
   label: '${String.stripTags(q(node).property(''title''))}'
   superTypes:
@@ -189,7 +186,6 @@
         inline:
           editorOptions:
             formatting:
-              u: false
               sub: false
               sup: false
               p: false
@@ -201,8 +197,8 @@
               a: true
               strong: true
               em: true
+              underline: false
             placeholder: 'Author email'
-
 'Community.News:NewsList':
   superTypes:
     'Neos.Neos:Content': true
@@ -214,7 +210,6 @@
   constraints:
     nodeTypes:
       '*': false
-
 'Community.News:NewsLatest':
   superTypes:
     'Neos.Neos:Content': true
